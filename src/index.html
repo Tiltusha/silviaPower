@@ -7,26 +7,83 @@
 </head>
 <body>
     <header class="header">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <div class="hamburger"></div>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__title">SILVIA</a>
-                    </li>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a href="#" class="dropdown__title" type="button" data-toggle="dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item">EU</li>
-                                    <li class="dropdown__item">RU</li>
-                                </ul>
-                            </a>
+            <div class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <div class="hamburger">
+                            <!-- <div class="hamburger__inner"> -->
+                                <!-- <span></span>
+                                <span></span>
+                                <span></span>
+                            </div> -->
                         </div>
                     </li>
+                    <li class="header__item">
+                        <a href="#" class="header__logo">SILVIA</a>
+                    </li>
+                    <li class="header__item">
+                        <div class="switch">
+                            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                            <label for="language-toggle"></label>
+                            <span class="on">EN</span>
+                            <span class="off">RU</span>
+                        </div>
+                        <img class="header__search" src="icons/search.svg" alt="">
+                    </li>
                 </ul>
-            </nav>
+            </div>
+            <div class="header__content">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Engine</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">generations</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">our reviews</a></li>
+                    </ul>
+                </nav>
+                <div class="header__main">
+                    <h1 class="header__title">SILVIA</h1>
+                    <img src="img/silvia-Photoroom 1.png" alt="" class="header__img">
+
+                    <div class="header__power block">
+                        <img class="block__img" src="icons/blockRound.svg" alt="">
+                        <div class="block__content">
+                            <h3 class="block__title">power</h3>
+                            <p class="block__text">160bph (s15)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="header__speed block">
+                        <img class="block__img" src="icons/blockRound.svg" alt="">
+                        <div class="block__content">
+                            <h3 class="block__title">top speed</h3>
+                            <p class="block__text">235 km/h (s15)</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header__scroll">
+                    <img src="icons/Line 4.png" alt="" class="scroll__img">
+                </div>
+            </div>
+            <div class="header__subtitle">
+                <h2 class="header__subtitle-text">Nissan Silvia is a sports coupe produced by the Japanese automaker Nissan from 1965 to 2002.</h2>
+            </div>
+            <div class="header__down">
+                <div class="social">
+                    <p class="social__links"><a class="social__link" href="#">telegram</a></p>
+                    <p class="social__links"><a class="social__link" href="#">instagram</a></p>
+                    <p class="social__links"><a class="social__link" href="#">twitter</a></p>
+                </div>
+                <div class="mouse">
+                    <img class="mouse__img" src="icons/mouse.svg" alt="">
+                </div>
+                <div class="arrows">
+                    <img src="icons/arr-left.svg" alt="" class="arrow__left">
+                    <img src="icons/arr-right.svg" alt="" class="arrow__right">
+                </div>
+            </div>
     </header>
 </body>
 </html>
