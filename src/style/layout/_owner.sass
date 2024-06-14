@@ -1,0 +1,21 @@
+.owner
+    height: 82rem
+    width: 114rem
+    margin: 0 auto
+    background-image: url('img/ownerbg.svg')
+    display: grid
+    grid-template-rows: repeat(12, 1fr)
+    grid-template-columns: repeat(12, 1fr)
+    &__img
+        &-left
+            grid-area: 6/ 1 / 12 / 4
+        &-center
+            grid-area: 3 / 5 / 7 / 7
+    &__about
+        grid-area: 6 / 9 / 8 / 12 
+        font-size: 24px
+    &__name
+        font-family: 'montserrat-bold'
+        font-size: 3.6rem
+        min-width: 37rem
+        
