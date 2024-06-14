@@ -5,10 +5,23 @@
     width: 76.2rem
     overflow-x: hidden
     
+.slider
+    overflow: hidden
+    &__bg
+        position: absolute
+        width: 51rem
+        height: 34rem
+        background: #000
+        z-index: -1
+        transform: translateX(60rem)
+
 .slide
     &__img
         margin-top: 4rem
         position: absolute
         padding-right: 4rem
         transition: transform 1s
+        width: 55rem
+        height: 38rem
+        object-fit: cover
 
