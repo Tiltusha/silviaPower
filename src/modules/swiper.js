@@ -42,9 +42,7 @@ export const swiper = document.querySelectorAll('.slider').forEach(function(slid
           goToSlide(0);
           nextSlide();
         }
-
     }, 2000)
-    console.log(currentSlide);
  })
 
 
