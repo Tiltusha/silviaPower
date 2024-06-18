@@ -6,17 +6,22 @@
     <title>Silvia</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
             <div class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
                         <div class="hamburger">
-                            <h4>menu</h4>
-                            <!-- <div class="hamburger__inner"> -->
-                                <!-- <span></span>
+                            <div class="icon nav-icon-1">
                                 <span></span>
                                 <span></span>
-                            </div> -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
                         </div>
                     </li>
                     <li class="header__item">
@@ -29,43 +34,48 @@
                             <span class="on">EN</span>
                             <span class="off">RU</span>
                         </div>
-                        <img class="header__search" src="icons/search.svg" alt="">
+                        <img class="header__search" src="icons/search.svg" alt="кнопка поиска">
                     </li>
                 </ul>
             </div>
             <div class="header__content">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Engine</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">about</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">generations</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">our reviews</a></li>
+                        <li class="nav__item"><a href="#header" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#engine" class="nav__link">Engine</a></li>
+                        <li class="nav__item"><a href="#generations" class="nav__link">generations</a></li>
+                        <li class="nav__item"><a href="#rewievs" class="nav__link">our rewievs</a></li>
+                        <li class="nav__item"><a href="#sponsors" class="nav__link">sponsors</a></li>
                     </ul>
                 </nav>
                 <div class="header__main">
                     <h1 class="header__title">SILVIA</h1>
-                    <img src="img/silvia-Photoroom 1.png" alt="" class="header__img">
-
+                    <img src="img/silvia-Photoroom 1.png" alt="фотография автомобиля nissan silvia s15" class="header__img" loading="lazy">
                     <div class="header__power block">
-                        <img class="block__img" src="icons/blockRound.svg" alt="">
+                        <img class="block__img" src="icons/blockRound.svg" alt="иконка круга">
                         <div class="block__content">
                             <h3 class="block__title">power</h3>
-                            <p class="block__text">160bph (s15)</p>
+                            <div class="power__about">
+                            <p class="power__text animatedText" data--start="0" data--end="160">160</p>
+                            <p class="power__descr">bhp (s15)</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="header__speed block">
-                        <img class="block__img" src="icons/blockRound.svg" alt="">
+                        <img class="block__img" src="icons/blockRound.svg" alt="иконка круга">
                         <div class="block__content">
                             <h3 class="block__title">top speed</h3>
-                            <p class="block__text">235 km/h (s15)</p>
+                            <div class="speed__about">
+                                <p class="speed__text animatedText" data--start="0" data--end="235">235</p>
+                                <p class="speed__descr">km/h (s15)</p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="header__scroll">
-                    <img src="icons/Line 4.png" alt="" class="scroll__img">
+                    <img src="icons/Line 4.png" alt="изображение полосы прокрутки" class="scroll__img">
                 </div>
             </div>
             <div class="header__subtitle">
@@ -78,16 +88,16 @@
                     <p class="social__links"><a class="social__link" href="#">twitter</a></p>
                 </div>
                 <div class="mouse">
-                    <img class="mouse__img" src="icons/mouse.svg" alt="">
+                    <img class="mouse__img" src="icons/mouse.svg" alt="иконка компьютерной мыши">
                 </div>
                 <div class="arrows">
-                    <img src="icons/arr-left.svg" alt="" class="arrow__left">
-                    <img src="icons/arr-right.svg" alt="" class="arrow__right">
+                    <img src="icons/arr-left.svg" alt="стрелка влево" class="arrow__left">
+                    <img src="icons/arr-right.svg" alt="стрелка вправо" class="arrow__right">
                 </div>
             </div>
     </header>
-    <main class="main">
-        <section class="engine">
+    <main class="main" data-aos="fade-up" data-aos-duration="1000">
+        <section class="engine" id="engine">
             <div class="engine__about">
                 <h2 class="engine__title">ENGINE SPECIFICATION</h2>
                 <p class="engine__paragraph">The Nissan SR20DET is a 2.0 liter (1998 cc) inline four-cylinder petrol internal combustion engine that is part of the SR family. Serially produced from 1989 to 2002. It was a turbocharged version of the SR20DE and a replacement for the CA18DET. The SR20DET, like the CA18DET, was equipped with a turbocharger and intercooler. It was a popular four-cylinder engine found in various Nissan vehicles, most notably the Nissan Silvia and 180SX.</p>
@@ -100,31 +110,31 @@
                             <p class="turbo__number">2.0</p>
                         </div>
                         <div class="fuel">
-                            <img src="icons/fuel.svg" alt="" class="fuel__img">
+                            <img src="icons/fuel.svg" alt="иконка топливной канистры" class="fuel__img">
                             <div class="fuel__descr">
                                 <p class="fuel__number">65</p>
                                 <p class="fuel__text">fuel</p>
                             </div>
                         </div>
                     </div>
-                    <img src="img/sr20det.png" alt="" class="engine__img">
+                    <img src="img/sr20det.png" alt="фотография двигателя nissan sr20det" class="engine__img">
                     <div class="engine__descr-right">
                         <div class="torque">
-                            <img src="icons/torque.svg" alt="" class="torque__img">
+                            <img src="icons/torque.svg" alt="иконка капли мощности" class="torque__img">
                             <div class="torque__descr">
                                 <p class="torque__number">265</p>
                                 <p class="torque__text">torque</p>
                             </div>
                         </div>
                         <div class="power">
-                            <img src="icons/power.svg" alt="" class="power__img">
+                            <img src="icons/power.svg" alt="иконка молнии, показывающей мощность" class="power__img">
                             <div class="power__descr">
                                 <p class="power__number">250</p>
                                 <p class="power__text">power</p>
                             </div>
                         </div>
                         <div class="speed">
-                            <img src="icons/speed.svg" alt="" class="speed__img">
+                            <img src="icons/speed.svg" alt="иконка скорости" class="speed__img">
                             <div class="speed__descr">
                                 <p class="speed__number">235</p>
                                 <p class="speed__text">top speed</p>
@@ -133,81 +143,99 @@
                     </div>
                 </div>
         </section>
-        <section class="generations">
+        <section class="generations" id="generations">
             <div class="generation">
                 <div class="generation__about">
+                    <div class="slider__bg"></div>
                     <h2 class="generation__title">nissan silvia s13</h2>
-                    <p class="generation__text">The S12 was produced from August 1983 to 1988, with changes made to the car's appearance in 1986. In this generation, Silvia was sold in two body styles - coupe and hatchback. A number of different engines were fitted to the S12 chassis, depending on the year of manufacture and the specific market.</p>
+                    <p class="generation__text">In 1988, the new S13 Silvia was released in Japan, and it became the most popular of the Silvia models. In Japan and most other countries, the first S13 Silvia was equipped with the CA18DE and CA18DET engines. The Silvia K's was a high-performance turbocharged model that produced 175 hp.</p>
                     <div class="generation__btn">
                         <a href="#" class="generation__link">read more</a>
                     </div>
                 </div>
                 <div class="generation__slider slider">
                     <div class="slide slide--1">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s13-1.jpg" alt="фотография машины nissan silvia s13">
                     </div>
                     <div class="slide slide--2">
-                        <img class="slide__img" src="img/testslide2.png" alt="">
+                        <img class="slide__img" src="img/s13-2.jpg" alt="фотография машины nissan silvia s13">
                     </div>
                     <div class="slide slide--3">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s13-3.webp" alt="фотография машины nissan silvia s13">
+                    </div>
+                    <div class="slide slide--4">
+                        <img class="slide__img" src="img/s13-4.jpg" alt="фотография машины nissan silvia s13">
+                    </div>
+                    <div class="slide slide--5">
+                        <img class="slide__img" src="img/s13-5.jpg" alt="фотография машины nissan silvia s13">
                     </div>
                 </div>
             </div>
             <div class="generation">
                 <div class="generation__about">
-                    <h2 class="generation__title">nissan silvia s13</h2>
-                    <p class="generation__text">The S12 was produced from August 1983 to 1988, with changes made to the car's appearance in 1986. In this generation, Silvia was sold in two body styles - coupe and hatchback. A number of different engines were fitted to the S12 chassis, depending on the year of manufacture and the specific market.</p>
+                    <div class="slider__bg"></div>
+                    <h2 class="generation__title">nissan silvia s14</h2>
+                    <p class="generation__text">The Silvia S14 was launched on the Japanese market in 1993, and, following the S13, was very popular among buyers. The S14 had almost everything from the S13, except for a new, more rounded body instead of the angular S13. The SR engine undergoes minor modifications. Also on the new S14 there are now new hubs with five studs. This was followed by modifications to the body, giving a more aggressive look to the front end.</p>
                     <div class="generation__btn">
                         <a href="#" class="generation__link">read more</a>
                     </div>
                 </div>
                 <div class="generation__slider slider">
                     <div class="slide slide--1">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s14-1.jpg" alt="фотография машины nissan silvia s14">
                     </div>
                     <div class="slide slide--2">
-                        <img class="slide__img" src="img/testslide2.png" alt="">
+                        <img class="slide__img" src="img/s14-2.jpg" alt="фотография машины nissan silvia s14">
                     </div>
                     <div class="slide slide--3">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s14-3.jpg" alt="фотография машины nissan silvia s14">
+                    </div>
+                    <div class="slide slide--4">
+                        <img class="slide__img" src="img/s14-4.jpg" alt="фотография машины nissan silvia s14">
+                    </div>
+                    <div class="slide slide--5">
+                        <img class="slide__img" src="img/s14-5.jpg" alt="фотография машины nissan silvia s14">
                     </div>
                 </div>
             </div>
             <div class="generation">
                 <div class="generation__about">
-                    <h2 class="generation__title">nissan silvia s13</h2>
-                    <p class="generation__text">The S12 was produced from August 1983 to 1988, with changes made to the car's appearance in 1986. In this generation, Silvia was sold in two body styles - coupe and hatchback. A number of different engines were fitted to the S12 chassis, depending on the year of manufacture and the specific market.</p>
+                    <div class="slider__bg"></div>
+                    <h2 class="generation__title">nissan silvia s15</h2>
+                    <p class="generation__text">In 1999, Nissan introduced the new Silvia S15 to the Japanese market. The S15 was still equipped with the same SR20, but now the top-end S15 Spec R version produced 250 hp and came with a six-speed transmission. There was also a special version of the non-turbo Spec S Autech, with a power of 200 hp. Production of the S15 ceased in 2002, and the history of Silvia stops there for now.</p>
                     <div class="generation__btn">
                         <a href="#" class="generation__link">read more</a>
                     </div>
                 </div>
                 <div class="generation__slider slider">
                     <div class="slide slide--1">
-                        <img class="slide__img" src="img/testslide.png" alt="">
-                    </div>
-                    <div class="slide slide--1">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s15-1.jpeg" alt="фотография машины nissan silvia s15">
                     </div>
                     <div class="slide slide--2">
-                        <img class="slide__img" src="img/testslide2.png" alt="">
+                        <img class="slide__img" src="img/s15-2.jpeg" alt="фотография машины nissan silvia s15">
                     </div>
                     <div class="slide slide--3">
-                        <img class="slide__img" src="img/testslide.png" alt="">
+                        <img class="slide__img" src="img/s15-3.jpeg" alt="фотография машины nissan silvia s15">
+                    </div>
+                    <div class="slide slide--4">
+                        <img class="slide__img" src="img/s15-4.jpeg" alt="фотография машины nissan silvia s15">
+                    </div>
+                    <div class="slide slide--5">
+                        <img class="slide__img" src="img/s15-5.jpg" alt="фотография машины nissan silvia s15">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="owner">
-            <img src="img/gocha1.png" alt="" class="owner__img-left">
-            <img src="img/gocha2.png" alt="" class="owner__img-center">
+        <section class="owner" id="owner">
+            <img src="img/gocha1.png" alt="фотография дрифтера Георгия Чивчан" class="owner__img-left owner__img">
+            <img src="img/gocha2.png" alt="фотография машины дрифтера Георгия Чивчан" class="owner__img-center owner__img">
             <div class="owner__about">
-                <img src="img/gocha3.png" alt="" class="owner__img-right">
+                <img src="img/gocha3.png" alt="фотография дрифтера Георгия Чивчан" class="owner__img-right owner__img">
                 <p class="owner__driftking">Drift King</p>
                 <h2 class="owner__name">Georgy Chivchyan</h2>
             </div>
         </section>
-        <section class="rewievs">
+        <section class="rewievs" id="rewievs">
             <h3 class="rewievs__title">watch rewievs</h3>
             <div class="rewievs__bg"></div>
             <div class="rewievs__container">
@@ -215,7 +243,7 @@
                     <iframe class="rewievs__video" width="900" height="500" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=1"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="rewievs__rec">
-                    <div class="rewievs__rec-1">
+                    <div class="rewievs__rec-1 rec">
                     <iframe class="rewievs__video" width="130" height="50" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="rec__video"></div>
                         <div class="rec__about">
@@ -223,7 +251,7 @@
                             <p class="rec__text">the best car in the world</p>
                         </div>
                     </div>
-                    <div class="rewievs__rec-2">
+                    <div class="rewievs__rec-2 rec">
                         <iframe class="rewievs__video" width="130" height="50" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="rec__video"></div>
                         <div class="rec__about">
@@ -231,7 +259,7 @@
                             <p class="rec__text">the best car in the world</p>
                         </div>
                     </div>
-                    <div class="rewievs__rec-3">
+                    <div class="rewievs__rec-3 rec">
                         <iframe class="rewievs__video" width="130" height="50" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="rec__video"></div>
                         <div class="rec__about">
@@ -239,7 +267,7 @@
                             <p class="rec__text">the best car in the world</p>
                         </div>
                     </div>
-                    <div class="rewievs__rec-4">
+                    <div class="rewievs__rec-4 rec">
                         <iframe class="rewievs__video" width="130" height="50" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="rec__video"></div>
                         <div class="rec__about">
@@ -247,7 +275,7 @@
                             <p class="rec__text">the best car in the world</p>
                         </div>
                     </div>
-                    <div class="rewievs__rec-5">
+                    <div class="rewievs__rec-5 rec">
                         <iframe class="rewievs__video" width="130" height="50" src="https://www.youtube.com/embed/Vy6OmTtnSTE?si=j2RBaTXRuZCD45ZL&amp;controls=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="rec__video"></div>
                         <div class="rec__about">
@@ -258,12 +286,12 @@
                 </div>
             </div>
         </section>
-        <section class="sponsors">
-            <img src="img/sponsor_aimol.jpg" alt="" class="sponsors__img">
-            <img src="img/sponsor_linglong.png" alt="" class="sponsors__img">
-            <img src="img/sponsor_vtb.png" alt="" class="sponsors__img">
-            <img src="img/sponsor_rds.jpg" alt="" class="sponsors__img">
-            <img src="img/sponsor_match.jpg" alt="" class="sponsors__img">
+        <section class="sponsors" id="sponsors">
+            <img src="img/sponsor_aimol.jpg" alt="фотография спонсора aimol" class="sponsors__img">
+            <img src="img/sponsor_linglong.png" alt="фотография спонсора linglong" class="sponsors__img">
+            <img src="img/sponsor_vtb.png" alt="фотография спонсора vtb" class="sponsors__img">
+            <img src="img/sponsor_rds.jpg" alt="фотография спонсора rdsTV" class="sponsors__img">
+            <img src="img/sponsor_match.jpg" alt="фотография спонсора match" class="sponsors__img">
         </section>
         <footer class="footer">
             <div class="social">
@@ -271,8 +299,9 @@
                 <p class="social__links"><a class="social__link" href="#">instagram</a></p>
                 <p class="social__links"><a class="social__link" href="#">twitter</a></p>
             </div>
-            <div class="footer__logo logo">silvia</div>
-            <div class="footer__copyright">Copyright © 2024. All rights reserved. <br> Created by <a href="#" class="footer__link">Nikita Lisicyn</a></div>
+            <div class="footer__item">
+                <a class="footer__logo logo" href="#header">silvia</a></div>
+            <div class="footer__copyright">Copyright © 2024. All rights reserved. <br> Created by <a href="https://github.com/Tiltusha" class="footer__link">Nikita Lisicyn</a></div>
         </footer>
     </main>
 </body>

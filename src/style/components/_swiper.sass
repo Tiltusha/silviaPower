@@ -2,13 +2,26 @@
     display: flex
     flex-direction: row
     position: relative
-    width: 76.2rem
+    width: 100%
     overflow-x: hidden
     
+.slider
+    overflow: hidden
+    &__bg
+        position: absolute
+        width: 45rem
+        height: 30rem
+        background: #000
+        z-index: -1
+        transform: translateX(42.7rem)
+
 .slide
     &__img
         margin-top: 4rem
         position: absolute
         padding-right: 4rem
         transition: transform 1s
+        width: 50rem
+        height: 30rem
+        object-fit: cover
 

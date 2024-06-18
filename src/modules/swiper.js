@@ -19,23 +19,23 @@ export const swiper = document.querySelectorAll('.slider').forEach(function(slid
         // activeDot(currentSlide);
       }
       
-      function prevSlide() {
-        if (currentSlide === 0) {
-          currentSlide = maxSlides - 1;
-        } else {currentSlide--};
-        goToSlide(currentSlide);
-        // activeDot(currentSlide);
+      // function prevSlide() {
+      //   if (currentSlide === 0) {
+      //     currentSlide = maxSlides - 1;
+      //   } else {currentSlide--};
+      //   goToSlide(currentSlide);
+      //   activeDot(currentSlide);
 
-      };
-    slider.addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowRight') {
-          nextSlide();
-        }
-        if (e.key === 'ArrowLeft') {
-          prevSlide();
-        }
-        // activeDot(currentSlide);
-      });
+      // };
+    // slider.addEventListener('keydown', function (e) {
+    //     if (e.key === 'ArrowRight') {
+    //       nextSlide();
+    //     }
+    //     if (e.key === 'ArrowLeft') {
+    //       prevSlide();
+    //     }
+    //     activeDot(currentSlide);
+    //   });
       setInterval(function(slide) {
         nextSlide();
         if (currentSlide ===  maxSlides - 1)  {
