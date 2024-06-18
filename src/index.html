@@ -11,12 +11,17 @@
                 <ul class="header__list">
                     <li class="header__item">
                         <div class="hamburger">
-                            <h4>menu</h4>
-                            <!-- <div class="hamburger__inner"> -->
-                                <!-- <span></span>
+                            <div class="icon nav-icon-1">
                                 <span></span>
                                 <span></span>
-                            </div> -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
                         </div>
                     </li>
                     <li class="header__item">
@@ -45,12 +50,15 @@
                 </nav>
                 <div class="header__main">
                     <h1 class="header__title">SILVIA</h1>
-                    <img src="img/silvia-Photoroom 1.png" alt="фотография автомобиля nissan silvia s15" class="header__img">
+                    <img src="img/silvia-Photoroom 1.png" alt="фотография автомобиля nissan silvia s15" class="header__img" loading="lazy">
                     <div class="header__power block">
                         <img class="block__img" src="icons/blockRound.svg" alt="иконка круга">
                         <div class="block__content">
                             <h3 class="block__title">power</h3>
-                            <p class="block__text">160bph (s15)</p>
+                            <div class="power__about">
+                            <p class="power__text animatedText" data--start="0" data--end="160">160</p>
+                            <p class="power__descr">bhp (s15)</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -58,7 +66,10 @@
                         <img class="block__img" src="icons/blockRound.svg" alt="иконка круга">
                         <div class="block__content">
                             <h3 class="block__title">top speed</h3>
-                            <p class="block__text">235 km/h (s15)</p>
+                            <div class="speed__about">
+                                <p class="speed__text animatedText" data--start="0" data--end="235">235</p>
+                                <p class="speed__descr">km/h (s15)</p>
+                            </div>
                         </div>
                     </div>
 
@@ -85,7 +96,7 @@
                 </div>
             </div>
     </header>
-    <main class="main">
+    <main class="main" data-aos="fade-up" data-aos-duration="1000">
         <section class="engine" id="engine">
             <div class="engine__about">
                 <h2 class="engine__title">ENGINE SPECIFICATION</h2>
